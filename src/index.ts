@@ -2,8 +2,6 @@ import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
 
-// console.log(process.env.START_MESSAGE)
-
 const app = express()
 app.use(cors())
 app.get('/', (req, res) => {
