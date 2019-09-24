@@ -1,13 +1,13 @@
 {
-  "name": "with-babel",
+  "name": "nodemon-babel-preset-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example project how to combine: node + babel + typescript",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node ./src/index.ts --extensions .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["nodemon", "node", "babel", "babel/preset-typescript"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
