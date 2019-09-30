@@ -6,6 +6,7 @@ import {response as MESSAGES} from './mocks/messages'
 import {sessionRouter} from './routes/session'
 import {usersRouter} from './routes/user'
 import {messagesRouter} from './routes/message'
+import {indexRouter} from './routes'
 
 const app: Application = express();
 app.use(cors());
@@ -19,6 +20,7 @@ app.use((req, res, next) => {
     };
     next();
 });
+app.use('/', indexRouter)
 app.use('/session', sessionRouter)
 app.use('/users', usersRouter)
 app.use('/messages', messagesRouter)
